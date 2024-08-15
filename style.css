@@ -1,5 +1,16 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color:#F9FAF8;
+}
+h3{
+    font-size: 18px;
+    color:#E5E7EB;
+}
 #header{
-    display:flex;
     background-color:#1F2937;
     color:white;
     justify-content:center;
@@ -7,12 +18,68 @@
     padding:10px;
     border:1px solid #ccc;
 }
+#header1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 #header h4{
     padding:10px 20px;
     border-radius:5px;
 }
-#header img{
+#header1 img{
     border-color:black;
     border-radius: 100px;
     margin-right: 50px;
+}
+#sub-header{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:10px;
+    text-align: left;
+}
+button{
+    background-color: #3882F6;
+    border-radius: 4px;
+}
+#sub-header > img{
+    margin-left: 100px;
+}
+h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color:#1F2937
+}
+#content {
+    display: flex; /* Creates a flex container */
+    justify-content: center; /* Distributes space between image containers */
+    align-items: center; /* Aligns image containers vertically (if needed) */
+    padding: 20px; /* Adds padding around the gallery */
+    gap: 20px; /* Adds space between each image container */
+}
+
+.image-container {
+    display: flex; /* Creates a flex container for each image and its subtext */
+    flex-direction: column; /* Stacks the image and subtext vertically */
+    align-items: center; /* Centers the image and subtext horizontally */
+}
+
+.image-container img {
+    border-radius: 8px; /* Optional: Adds rounded corners to images */
+    margin-bottom: 10px; /* Adds space between the image and subtext */
+}
+
+.subtext {
+    font-size: 20px; /* Sets the size of the subtext */
+    color: #555; /* Sets the color of the subtext */
+    text-align: center; /* Centers the subtext horizontally */
+}
+#sub-context{
+    text-align: center;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: italic;
+    color:#1F2937
 }
